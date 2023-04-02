@@ -1,39 +1,45 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
+
 import Button from 'react-bootstrap/Button';
+import Badge from 'react-bootstrap/Badge';
 
-const ItemCount = ({ stock, id, price, name }) => {
-  const [count, setCount] = useState(1);
+const ItemCount = ({ stock, onAdd, id }) => {
+  const [quanti, setQuanti] = useState(1);
+
   const addQty = () => {
-    setCount(count + 1);
+    setQuanti(quanti + 1);
   };
-  const substractQty = () => {
-    setCount(count - 1);
+
+  const removeQty = () => {
+    setQuanti(quanti - 1);
   };
-    
+
   return (
-    <div>
-        {count <= 1 ? (
-            <Button variant="primary" disabled>-</Button>
+    <div className="item_count_main">
+      <div>
+        {quanti <= 1 ? (
+            <Button className="bg-secondary" value="-">-</Button>
         ) : (
-          <Button variant="primary" onClick={substractQty}>-</Button>
+          <Button className="bg-danger" onClick={removeQty}>-</Button>
         )}
-
+        <div>
           <Button
-            onClick={() => addToCart()}
-            variant="secondary"
-          >
-            Add to cart: {count}
+            onClick={() => onAdd(quanti, id)}
+            variant="primary">
+            Agregar al Carrito: {quanti}
           </Button>
-
-          {count < stock ? (
-          <Button variant="primary" onClick={addQty}>+</Button>
+        </div>
+        {quanti < stock ? (
+          <Button className="bg-success" onClick={addQty}>+</Button>
         ) : (
-          <Button variant="primary"disabled>+</Button>
+          <div>
+            <Button className="bg-secondary">+</Button>
+            <Badge className="text-dark bg-alert">Sin inventario</Badge>
+          </div>
         )}
-        
-      
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ItemCount
+export default ItemCount;

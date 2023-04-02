@@ -1,28 +1,28 @@
-import React from 'react'
 import Item from "./Item";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 const ItemList = ({product}) => {
   return (
-      <Row>
-      {product.map((product) => (
+    <>
+        <Container className="mb-5">
+          <Row>
+            {product.map((product) => (
               <Item
-                key={product.id}
-                id={product.id}
-                name={product.name}
-                description_short={product.description_short}
-                price={product.price}
-                stock={product.stock}
-                category={product.category}
-                image={product.image}
+              key={product.id}
+              id={product.id}
+              name={product.name}
+              price={product.price}
+              stock={product.stock}
+              category={product.category}
+              image={product.image}
               />
-            )
-          )
-        }        
-      </Row>
-    
-  )
-}
+              ))}
+          </Row>
+        </Container>
+    </>    
+  );
+};
 
 export default ItemList
+  
