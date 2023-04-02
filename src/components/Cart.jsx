@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Checkout from "./Checkout";
+import FormCart from "./Checkout";
 import { useContext } from "react";
 import { CartContext } from "../context/ShoppingCartContext";
 import Button from 'react-bootstrap/Button';
@@ -34,7 +34,7 @@ const Cart = () => {
   return (
     <Container>
       <Row>
-        <Col lg="4"><Checkout/></Col>
+        <Col lg="4"><FormCart/></Col>
         <Col className="my-5" lg="8"><Brief/></Col>
       </Row>
     </Container>
