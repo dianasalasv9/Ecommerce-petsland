@@ -5,7 +5,7 @@ import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
 import Welcome from "./components/Welcome";
 import Cart from "./components/Cart";
-import Footer from "./components/footer";
+import footer from "./components/footer";
 import Contact from "./components/Contact";
 import ShoppingCartProvider from "./context/ShoppingCartContext";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -35,7 +35,6 @@ const App = () => {
               <Route exact path="/contact" element={<Contact />} />
               <Route exact path="/thankyou" element={<Thankyou />} />
             </Routes>
-            <Footer />
           </BrowserRouter>
         </ShoppingCartProvider>
     </>

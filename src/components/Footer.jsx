@@ -7,7 +7,7 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import FbIcon from "../assets/fb_icon.png";
 
-const Footer = () => {
+const footer = () => {
   return (
     <Container fluid className="bg-warning">
       <div className="py-6">
@@ -58,4 +58,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default footer;
