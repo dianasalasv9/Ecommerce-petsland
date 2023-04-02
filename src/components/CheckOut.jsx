@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { CartContext } from "../context/ShoppingCartContext";
 import { useNavigate } from "react-router-dom";
 
-const FormCart = () => {
+const CheckOut = () => {
   const [orderId, setOrderId] = useState(null);
   const [nombre, setName] = useState("");
   const [apellido, setSurname] = useState("");
@@ -69,4 +69,4 @@ const FormCart = () => {
   );
 };
 
-export default FormCart;
+export default CheckOut;

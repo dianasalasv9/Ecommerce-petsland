@@ -20,7 +20,7 @@ const Cart = () => {
       <Link to={"/catalogo"}>
       <Button variant="danger">Regresar al catálogo</Button>
       </Link>
-      <h3 className="h3">Carrito Vacio :(</h3>
+      <h3 className="h3">Carrito Vacio</h3>
     </Col>
   </Row>
 
