@@ -5,7 +5,6 @@ import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
 import Welcome from "./components/Welcome";
 import Cart from "./components/Cart";
-import footer from "./components/footer";
 import Contact from "./components/Contact";
 import ShoppingCartProvider from "./context/ShoppingCartContext";
 import "bootstrap/dist/css/bootstrap.min.css";
