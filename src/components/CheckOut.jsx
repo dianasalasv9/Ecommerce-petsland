@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import { collection, addDoc, getFirestore } from "firebase/firestore";
 import { useContext } from "react";
-import { CartContext } from "../Context/ShoppingCartContext";
+import { CartContext } from "../context/ShoppingCartContext";
 import { useNavigate } from "react-router-dom";
 
 const FormCart = () => {
