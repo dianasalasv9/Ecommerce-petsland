@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import FormCart from "./Checkout";
+import FormCart from "./CheckOut";
 import { useContext } from "react";
 import { CartContext } from "../context/ShoppingCartContext";
 import Button from 'react-bootstrap/Button';
