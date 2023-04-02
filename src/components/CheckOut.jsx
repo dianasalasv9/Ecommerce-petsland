@@ -3,10 +3,10 @@ import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import { collection, addDoc, getFirestore } from "firebase/firestore";
 import { useContext } from "react";
-import { CartContext } from "../context/ShoppingCartContext";
+import { CartContext } from "../Context/ShoppingCartContext";
 import { useNavigate } from "react-router-dom";
 
-const CheckOut = () => {
+const FormCart = () => {
   const [orderId, setOrderId] = useState(null);
   const [nombre, setName] = useState("");
   const [apellido, setSurname] = useState("");
@@ -69,4 +69,4 @@ const CheckOut = () => {
   );
 };
 
-export default CheckOut;
+export default FormCart;
