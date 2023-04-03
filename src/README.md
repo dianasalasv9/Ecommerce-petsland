@@ -19,6 +19,6 @@ Librerías utilizadas en este proyecto:
 <br><br><br>
 
 
-![Gif de ejemplo](./assets/gif2da.gif)
+![Gif de ejemplo](./assets/giffinal.gif)
 
 
